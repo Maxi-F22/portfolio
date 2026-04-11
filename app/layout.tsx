@@ -57,7 +57,7 @@ export default function RootLayout({
           {children}
         </main>
         <footer className="border-t border-[#2a355c] bg-[#05070e]/75">
-          <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-4 py-6 text-sm text-[#9aa6c4] md:flex-row md:items-center md:justify-between md:px-6">
+          <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-4 py-6 text-sm text-[#9aa6c4] md:flex-row items-center md:justify-between md:px-6">
             <div><p>© {currentYear} Maximilian Flack</p></div>
             <div className="flex gap-6">
               <a target="_blank" href="https://www.github.com/Maxi-F22?tab=repositories" rel="noopener noreferrer" className="inline-flex h-5 w-5 items-center justify-center">

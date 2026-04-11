@@ -7,6 +7,7 @@ type LazyIframeProps = {
   src: string;
   className?: string;
   buttonLabel?: string;
+  scale?: number;
 };
 
 export default function LazyIframe({
@@ -14,18 +15,28 @@ export default function LazyIframe({
   src,
   className = "min-h-[320px] md:min-h-[420px]",
   buttonLabel = "Load Project",
+  scale = 1,
 }: LazyIframeProps) {
   const [isLoaded, setIsLoaded] = useState(false);
+  const safeScale = Math.min(Math.max(scale, 0.1), 1);
 
   if (isLoaded) {
     return (
-      <iframe
-        className={`mb-3 w-full rounded-xl border border-[#2a355c] bg-black ${className}`}
-        title={title}
-        src={src}
-        loading="lazy"
-        referrerPolicy="no-referrer"
-      />
+      <div className={`relative mb-3 w-full overflow-hidden rounded-xl border border-[#2a355c] bg-black ${className}`}>
+        <iframe
+          className="absolute left-0 top-0 block border-0 bg-black"
+          title={title}
+          src={src}
+          loading="lazy"
+          referrerPolicy="no-referrer"
+          style={{
+            width: `${100 / safeScale}%`,
+            height: `${100 / safeScale}%`,
+            transform: `scale(${safeScale})`,
+            transformOrigin: "top left",
+          }}
+        />
+      </div>
     );
   }
 

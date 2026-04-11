@@ -5,12 +5,14 @@ type FeatureProps = {
   headline: ReactNode;
   text: ReactNode;
   buttonText: ReactNode;
+  link: string;
 };
 
 export default function FeatureItem({
   headline,
   text,
-  buttonText
+  buttonText,
+  link
 }: FeatureProps) {
   return (
     <article className="rounded-2xl border border-[#2a355c] bg-gradient-to-br from-[#131a30] to-[#1a2442] p-5 shadow-[0_8px_30px_rgba(0,0,0,0.3)]">
@@ -19,7 +21,7 @@ export default function FeatureItem({
         {text}
       </p>
       <Link
-        href="/student-projects#vr"
+        href={link}
         className="mt-3 inline-flex rounded-xl border border-[#2a355c] px-3 py-2 text-sm transition hover:-translate-y-0.5 hover:border-[#56c7ff]"
       >
         {buttonText}

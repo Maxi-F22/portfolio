@@ -37,16 +37,19 @@ export default function Home() {
             headline="VR-Multiplayer"
             text="One of the things I&apos;m focusing on in my master&apos;s programme is creating Multi-User Virtual Reality applications in Unity, Unreal and Godot."
             buttonText="VR Projects"
+            link="/student-projects#type-vr"
           />
           <FeatureItem 
             headline="Games"
             text="As part of my courses, I created a couple of games. I made some of them on my own and some with my classmates. Try them here, they&apos;re embedded from Github pages."
             buttonText="Game Dev"
+            link="/student-projects#type-game-dev"
           />
           <FeatureItem 
             headline="CuWave (WIP)"
             text="I&apos;m having a bit of fun at the moment working on a small puzzle game in Godot. I made the cube model in Blender. It&apos;s a work in progress, so don&apos;t expect perfection! :)"
             buttonText="CuWave"
+            link="/own-projects"
           />
 
         </div>

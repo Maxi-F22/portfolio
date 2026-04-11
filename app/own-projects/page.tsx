@@ -23,10 +23,8 @@ export default function OwnProjectsPage() {
             key={project.title}
             className="rounded-2xl border border-[#2a355c] bg-gradient-to-br from-[#131a30] to-[#1a2442] p-5 shadow-[0_8px_30px_rgba(0,0,0,0.3)]"
           >
-            <h2 className="mb-2 text-2xl font-semibold">
-              {project.title}
-            </h2>
-            <p className="mb-4 mt-4 text-[#9aa6c4]">{project.description}</p>
+            <h2 className="mb-2 text-2xl font-semibold">{project.title}</h2>
+            <p className="mb-4 mt-4 text-[#9aa6c4] whitespace-pre-line">{project.description}</p>
             <div className="mt-3">
               {project.stack.map((item) => (
                 <span
@@ -38,18 +36,24 @@ export default function OwnProjectsPage() {
               ))}
             </div>
 
-            <div className="mt-3">
-              <LazyIframe
-                title={project.title}
-                src={project.githubPagesUrl}
-                buttonLabel="Load Project"
-              />
-            </div>
-            <a target="_blank" href={project.githubPagesUrl} rel="noopener noreferrer" className="mt-3 inline-flex rounded-xl border border-[#2a355c] px-3 py-2 text-sm transition hover:-translate-y-0.5 hover:border-[#56c7ff]">
-              Open Project
-            </a>
+            {project.githubPagesUrl && (
+              <>
+                <div className="mt-3">
+                  <LazyIframe
+                    title={project.title}
+                    src={project.githubPagesUrl}
+                    buttonLabel="Load Embedded Project"
+                    scale={project.iframeScale}
+                  />
+                </div>
+                
+                <a target="_blank" href={project.githubPagesUrl} rel="noopener noreferrer" className="mr-3 mt-3 inline-flex rounded-xl border border-[#2a355c] px-3 py-2 text-sm transition hover:-translate-y-0.5 hover:border-[#56c7ff]">
+                  Open Project
+                </a>
+              </>
+            )}
 
-            <a target="_blank" href={project.repoUrl} rel="noopener noreferrer" className="mt-3 ml-3 inline-flex rounded-xl border border-[#2a355c] px-3 py-2 text-sm transition hover:-translate-y-0.5 hover:border-[#56c7ff]">
+            <a target="_blank" href={project.repoUrl} rel="noopener noreferrer" className="mt-3 inline-flex rounded-xl border border-[#2a355c] px-3 py-2 text-sm transition hover:-translate-y-0.5 hover:border-[#56c7ff]">
               Open Repository
             </a>
           </article>
