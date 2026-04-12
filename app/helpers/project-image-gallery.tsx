@@ -40,7 +40,7 @@ export default function ProjectImageGallery({ title, imageSources }: ProjectImag
                 alt={`${title} screenshot ${imageNumber}`}
                 width={1200}
                 height={675}
-                className="h-48 w-full object-cover"
+                className="h-24 md:h-48 w-full object-cover"
               />
             </button>
           );
@@ -87,13 +87,15 @@ export default function ProjectImageGallery({ title, imageSources }: ProjectImag
             >
               Close
             </button>
-            <div className="relative h-[85vh] w-full" onClick={(event) => event.stopPropagation()}>
+            <div className="flex max-h-[85vh] w-full items-center justify-center" onClick={(event) => event.stopPropagation()}>
               <Image
                 src={selectedImage}
                 alt={`${title} enlarged screenshot`}
-                fill
+                width={1600}
+                height={900}
                 className="object-contain"
                 sizes="100vw"
+                style={{ width: "auto", height: "auto", maxWidth: "100%", maxHeight: "85vh" }}
               />
             </div>
           </div>
