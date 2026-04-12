@@ -143,7 +143,7 @@ export default function StudentProjectsPage() {
 
                   <div className="mt-3">
                     <video className="w-full h-auto" controls preload="auto">
-                      <source src="/video.mp4" type="video/mp4" />
+                      <source src="video.mp4" type="video/mp4" />
                       Your browser does not support the video tag.
                     </video>
                   </div>

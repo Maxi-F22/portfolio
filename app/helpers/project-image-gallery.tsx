@@ -23,7 +23,7 @@ export default function ProjectImageGallery({ title, imageSources }: ProjectImag
     <>
       <div className="w-full min-w-0">
     
-        <div className={imageSources.length > 2 ? "grid grid-cols-1 gap-3 grid-cols-3" : "grid grid-cols-1 gap-3 grid-cols-" + imageSources.length}>
+        <div className={imageSources.length > 2 ? "grid gap-3 grid-cols-3" : "grid gap-3 grid-cols-" + imageSources.length}>
         {visibleImages.map((source, index) => {
           const imageNumber = startIndex + index + 1;
 
