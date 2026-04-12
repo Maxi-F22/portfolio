@@ -11,17 +11,17 @@ export default function AboutMePage() {
           headline="About Me"
           text={
             <>
-              My name is Maximilian Flack, I’m 25, and I grew up in the Black Forest region of Germany—a place that shaped both my personal and academic journey. 
-              I developed a strong interest in interactive applications, combining technical problem-solving with creative design, which led me to study Media Informatics at Hochschule Furtwangen, 
+              My name is Maximilian Flack, I’m 25, and I grew up in the Black Forest region of Germany - a place that shaped both my personal and academic journey. 
+              I developed a strong interest in interactive applications and combining technical problem-solving with creative design, which led me to study Media Informatics at Hochschule Furtwangen, 
               where I am currently completing my Master’s degree after earning my Bachelor’s. <br /><br />
-              Along the way, I discovered a passion for game development and VR, with a particular focus on multi-user VR applications.
-              I took a few courses to help me build my skills and gain experience in handling different game engines — you can view the results on the
+              Along the way, I discovered a passion for game development and VR, with a particular focus on Multi-User VR applications.
+              I took a few courses to help me build my skills and gain experience in handling different game engines - you can view the results on the
               <Link href="/student-projects" className="text-[#fff]! hover:text-[#9aa6c4]!">
                 {" "}Student Project{" "}
               </Link> page.<br /><br />
-              I also gained experience in developing and maintaining websites through my Bachelor&apos;s degree, my internship semester and my part-time job in the field.
+              I also gained experience in developing and maintaining websites through my Bachelor’s degree, my internship semester and my part-time job in the field.
               The main tools I worked with during that time were HTML, CSS, and JavaScript/TypeScript, specifically the Vue.js and React frameworks.<br />
-              (This site is also built using React and Next.js)
+              (This site is also built using React and Next.js!)
             </>
           }
         />
@@ -47,9 +47,9 @@ export default function AboutMePage() {
         <h3 className="text-xl font-semibold">Work Experience</h3>
 
         <CVItem 
-          headline="Research assistant in the field of multi-user VR development"
+          headline="Research assistant in the field of Multi-User VR development"
           company="Hochschule Furtwangen"
-          description="Further development of a Unity multi-user VR template and its deployment for exhibitions"
+          description="Further development of a Unity Multi-User VR template and its deployment for exhibitions"
           years="Apr 2026 - today"         
         />
         <CVItem 
