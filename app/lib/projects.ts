@@ -37,7 +37,7 @@ export const projects: ProjectEmbed[] = [
     description: 
       `For my bachelor's thesis, I created a musical Multi-User VR application for two clients. I learnt a lot about VR and multiplayer development in Unity during that time. The main topic I was looking into in my research was how to get haptic feedback from the controllers to make the experience more realistic and improve the perception of music for the clients.`,
     stack: ["Unity", "Multiplayer", "Empirical Research", "VR"],
-    imageSources: ["/bach-scene.png", "/bach-balls.png", "/bach-wall.png", "/bach-hands.jpg"],
+    imageSources: ["bach-scene.png", "bach-balls.png", "bach-wall.png", "bach-hands.jpg"],
     githubPagesUrl: "",
     repoUrl: "https://github.com/Maxi-F22/ThesisWiSe23-24",
     type: "VR"
@@ -47,7 +47,7 @@ export const projects: ProjectEmbed[] = [
     description: 
       `As part of a research project for my Master's degree, my group and I developed a Unity Multi-User VR template. The template is designed to quickly set up a local, colocated Multi-User VR environment for up to 16 clients. The application runs on standalone VR headsets, the server on a laptop and all devices are connected via a router that sets up a local network without an internet connection. \n\nThe following images will give you an idea of what the template looks like:`,
     stack: ["Unity", "Multiplayer", "VR"],
-    imageSources: ["/vru-avatar.jpg", "/vru-lobby_empty.png", "/vru-playground.png", "/vru-scenechanger.png", "/vru-visualizer.png"],
+    imageSources: ["vru-avatar.jpg", "vru-lobby_empty.png", "vru-playground.png", "vru-scenechanger.png", "vru-visualizer.png"],
     githubPagesUrl: "",
     repoUrl: "",
     type: "VR"
@@ -142,7 +142,7 @@ export const projects: ProjectEmbed[] = [
     description:
       `This project was created as the final assignment of the course Interaction Design. It is about developing a meeting companion website that records meetings, transcribes them into text, and organizes the content into structured categories. The transcription, summarisation, grouping into items and icon creation are all done by different AIs using the Inference API from HuggingFace.  \n\nMade by Maximilian Flack, Sven Schirmaier, Noam Hartmann, Marcel Ritter.`,
     stack: ["Interaction Design", "AI Integration", "Hugging Face", "JavaScript"],
-    imageSources: ["ai-transcirpt.png", "/ai-results.png"],
+    imageSources: ["ai-transcirpt.png", "ai-results.png"],
     githubPagesUrl: "",
     repoUrl: "https://github.com/Maxi-F22/MeetingCompanion",
     type: "AI"

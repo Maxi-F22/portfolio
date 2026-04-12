@@ -63,7 +63,7 @@ export default function RootLayout({
               <a target="_blank" href="https://www.github.com/Maxi-F22?tab=repositories" rel="noopener noreferrer" className="inline-flex h-5 w-5 items-center justify-center">
                 <Image
                   className="h-5 w-5 transition-transform duration-200 ease-out hover:scale-120"
-                  src="/github.svg"
+                  src="github.svg"
                   width={20}
                   height={20}
                   alt=""
@@ -72,7 +72,7 @@ export default function RootLayout({
               <a target="_blank" href="https://www.linkedin.com/in/maximilian-flack-0b89b0396" rel="noopener noreferrer" className="inline-flex h-5 w-5 items-center justify-center">
                 <Image
                   className="h-5 w-5 transition-transform duration-200 ease-out hover:scale-120"
-                  src="/linkedin.svg"
+                  src="linkedin.svg"
                   width={20}
                   height={20}
                   alt=""
