@@ -29,7 +29,7 @@ export const projects: ProjectEmbed[] = [
     stack: ["Unreal Engine", "Godot", "Multiplayer", "VR"],
     imageSources: [],
     githubPagesUrl: "",
-    repoUrl: "",
+    repoUrl: "https://github.com/Maxi-F22/MasterThesis",
     type: "VR"
   },
   {
