@@ -4,7 +4,7 @@ This is my personal portfolio website showcasing a selection of my projects from
 
 You can view the live version here:
 
-[Portfolio](https://www.maximilianflack.com/)
+[Portfolio](https://maxi-f22.github.io/portfolio/)
 
 ## About the Project
 
